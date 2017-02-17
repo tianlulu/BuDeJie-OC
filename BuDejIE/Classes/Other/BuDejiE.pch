@@ -1,0 +1,26 @@
+//
+//  BuDejiE.pch
+//  BuDejIE
+//
+//  Created by lushuishasha on 2016/11/1.
+//  Copyright © 2016年 lushuishasha. All rights reserved.
+//
+
+#ifndef BuDejiE_pch
+#define BuDejiE_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Item.h"
+
+
+#endif /* BuDejiE_pch */
+#define TLFunc LULULog(@"%s",__func__)
+#ifdef DEBUG 
+#define  LULULog(...)  NSLog(__VA_ARGS__)
+#else
+#define LULULog(...)
+#endif
+
+
