@@ -11,16 +11,16 @@
 @implementation LuLuNewViewController
 - (void)viewDidLoad {
     self.view.backgroundColor = [UIColor yellowColor];
-    [self setupoNavBar];
+    [self setupNavBar];
 }
 
-- (void)setupoNavBar {
+- (void)setupNavBar {
     //左边按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(TagClick)];
     
     //titleView
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@
-                                                                "MainTitle"]];
+                                                            "MainTitle"]];
 }
 
 - (void)TagClick {

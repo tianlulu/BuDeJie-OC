@@ -16,10 +16,10 @@
 #import "LuLutabBar.h"
 #import "TLNavgationController.h"
 
-@interface LuLuTabBartViewController ()
+@interface LuLuTabBarViewController ()
 @end
 
-@implementation LuLuTabBartViewController
+@implementation LuLuTabBarViewController
 //1.图片太大，系统帮忙渲染
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +55,7 @@
 
 //可能会调用多次
 + (void)initialize {
-    if (self == [LuLuTabBartViewController class]) {
+    if (self == [LuLuTabBarViewController class]) {
     }
 }
 
@@ -70,7 +70,7 @@
     TLNavgationController *nav2 = [[TLNavgationController alloc]initWithRootViewController:newVc];
     [self addChildViewController:nav2];
     
-//    //发布
+    //发布
 //    LuLuPublishViewController *pubVc = [[LuLuPublishViewController alloc]init];
 //    [self addChildViewController:pubVc];
     
@@ -90,32 +90,32 @@
 -(void) setupTabbarItems {
      //设置tabbar按钮
      // 0:nav
-     TLNavgationController *nav1 = self.childViewControllers[0];
+     UINavigationController *nav1 = self.childViewControllers[0];
      nav1.tabBarItem.title = @"精华";
      nav1.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
      nav1.tabBarItem.selectedImage = [UIImage RenderingImageWithName:@"tabBar_essence_click_icon"];
  
      // 1:新帖
-     TLNavgationController *nav2 = self.childViewControllers[1];
+     UINavigationController *nav2 = self.childViewControllers[1];
      nav2.tabBarItem.title = @"新帖";
      nav2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
      nav2.tabBarItem.selectedImage = [UIImage RenderingImageWithName:@"tabBar_new_click_icon"];
     
-//     // 2:发布
-//     LuLuPublishViewController *pubVc = self.childViewControllers[2];
-//    pubVc.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
-//    pubVc.tabBarItem.selectedImage = [UIImage RenderingImageWithName:@"tabBar_publish_click_icon"];
-    //设置图片的位置
-   // pubVc.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
+    //    // 2:发布
+    //    LuLuPublishViewController *pubVc = self.childViewControllers[2];
+    //    pubVc.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
+    //    pubVc.tabBarItem.selectedImage = [UIImage RenderingImageWithName:@"tabBar_publish_click_icon"];
+    //    设置图片的位置
+    //    pubVc.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
     
      // 3.关注
-     TLNavgationController *nav3 = self.childViewControllers[2];
+     UINavigationController *nav3 = self.childViewControllers[2];
      nav3.tabBarItem.title = @"关注";
      nav3.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
      nav3.tabBarItem.selectedImage = [UIImage RenderingImageWithName:@"tabBar_friendTrends_click_icon"];
     
      // 4.我
-     TLNavgationController *nav4 = self.childViewControllers[3];
+     UINavigationController *nav4 = self.childViewControllers[3];
      nav4.tabBarItem.title = @"我";
      nav4.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
      nav4.tabBarItem.selectedImage = [UIImage RenderingImageWithName:@"tabBar_me_click_icon"];

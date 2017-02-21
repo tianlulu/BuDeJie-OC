@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LuLuTabBartViewController : UITabBarController
+@interface LuLuTabBarViewController : UITabBarController
 
 @end

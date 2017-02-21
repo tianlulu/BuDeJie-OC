@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "LuLuTabBartViewController.h"
-
+/*
+ 搭建基本构建 -> 设置底部条 -> 设置顶部条 ->处理控制器业务逻辑(跳转)
+ */
 
 /*
  优先级:LaunchScreen > LaunchImage
@@ -28,7 +30,7 @@
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    LuLuTabBartViewController *taBbarVc = [[LuLuTabBartViewController alloc]init];
+    LuLuTabBarViewController *taBbarVc = [[LuLuTabBarViewController alloc]init];
     self.window.rootViewController = taBbarVc;
     //添加自控制器(5个) ->自定义控制器
     [self.window makeKeyAndVisible];
