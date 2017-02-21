@@ -8,12 +8,20 @@
 
 #import "TLNavgationController.h"
 
-@interface TLNavgationController ()
+@interface TLNavgationController ()<UIGestureRecognizerDelegate>
 
 @end
 
 @implementation TLNavgationController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // 控制手势什么时候触发,只有非根控制器才需要触发手势
+    self.interactivePopGestureRecognizer.delegate = self;
+    
+    // 假死状态:程序还在运行,但是界面死了.
+}
 
 //设置一次 loadView
 - (void)load{
@@ -32,8 +40,7 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-     TLFunc;
-    
+    //恢复滑动返回功能 -> 分析：把系统的滑动返回功能覆盖 -> 手势失效(1.手势被清空 2.可能手势代理做了一些事情，导致手势失效)
     if (self.childViewControllers.count > 0) {
         //统一设置左边导航按钮
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWithImage:
@@ -44,12 +51,11 @@
     [super pushViewController:viewController animated:YES];
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    return self.childViewControllers.count > 1;
+}
 
 -(void)back {
     [self popViewControllerAnimated:YES];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
 }
 @end
