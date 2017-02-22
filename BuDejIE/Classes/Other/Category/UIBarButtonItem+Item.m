@@ -34,7 +34,7 @@
     [btn sizeToFit];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
-    //将btn包装成UIView（如果直接将btn包装成UIBarButtonItem）
+    //将btn包装成UIView（如果直接将btn包装成UIBarButtonItem 点击的响应区域会变大） 
     UIView *containerView = [[UIView alloc]initWithFrame:btn.bounds];
     [containerView addSubview:btn];
     

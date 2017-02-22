@@ -23,6 +23,15 @@
 		F14592351DAA4F63004F48C4 /* LuLuEsenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14592341DAA4F63004F48C4 /* LuLuEsenseViewController.m */; };
 		F1554A5E1DAD04520011A541 /* LuLuTabBartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1554A5B1DAD04520011A541 /* LuLuTabBartViewController.m */; };
 		F1554A611DAD0C110011A541 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = F1554A601DAD0C110011A541 /* UIImage+image.m */; };
+		F16618001E5D385A00724A55 /* TLAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16617FF1E5D385A00724A55 /* TLAdViewController.m */; };
+		F16618021E5D6EE600724A55 /* TLAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16618011E5D6EE600724A55 /* TLAdViewController.xib */; };
+		F166180B1E5D7C8400724A55 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F16618041E5D7C8400724A55 /* LaunchImage-568h@2x.png */; };
+		F166180C1E5D7C8400724A55 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F16618051E5D7C8400724A55 /* LaunchImage-700-568h@2x.png */; };
+		F166180D1E5D7C8400724A55 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F16618061E5D7C8400724A55 /* LaunchImage-700@2x.png */; };
+		F166180E1E5D7C8400724A55 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F16618071E5D7C8400724A55 /* LaunchImage-800-667h@2x.png */; };
+		F166180F1E5D7C8400724A55 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F16618081E5D7C8400724A55 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		F16618101E5D7C8400724A55 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F16618091E5D7C8400724A55 /* LaunchImage.png */; };
+		F16618111E5D7C8400724A55 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F166180A1E5D7C8400724A55 /* LaunchImage@2x.png */; };
 		F1A20C5F1E5C109700C9DEF6 /* TLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A20C5E1E5C109700C9DEF6 /* TLSettingViewController.m */; };
 		F1B7FD9F1DB8C526004FC1E9 /* LuLutabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7FD9E1DB8C526004FC1E9 /* LuLutabBar.m */; };
 		F1CB33091E0CCE8000448BDE /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CB33081E0CCE8000448BDE /* UIBarButtonItem+Item.m */; };
@@ -78,6 +87,16 @@
 		F1554A5B1DAD04520011A541 /* LuLuTabBartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuLuTabBartViewController.m; sourceTree = "<group>"; };
 		F1554A5F1DAD0C110011A541 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		F1554A601DAD0C110011A541 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		F16617FE1E5D385A00724A55 /* TLAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAdViewController.h; sourceTree = "<group>"; };
+		F16617FF1E5D385A00724A55 /* TLAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAdViewController.m; sourceTree = "<group>"; };
+		F16618011E5D6EE600724A55 /* TLAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLAdViewController.xib; sourceTree = "<group>"; };
+		F16618041E5D7C8400724A55 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		F16618051E5D7C8400724A55 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		F16618061E5D7C8400724A55 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		F16618071E5D7C8400724A55 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		F16618081E5D7C8400724A55 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		F16618091E5D7C8400724A55 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		F166180A1E5D7C8400724A55 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		F1A20C5D1E5C109700C9DEF6 /* TLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSettingViewController.h; sourceTree = "<group>"; };
 		F1A20C5E1E5C109700C9DEF6 /* TLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSettingViewController.m; sourceTree = "<group>"; };
 		F1B7FD9D1DB8C526004FC1E9 /* LuLutabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuLutabBar.h; sourceTree = "<group>"; };
@@ -149,6 +168,7 @@
 		F1345E111DAA1E7E00B16857 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F16618031E5D7C8400724A55 /* 启动图片 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,6 +194,7 @@
 		F14592041DAA4BD9004F48C4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F16617FA1E5D36A800724A55 /* AD(广告) */,
 				F1A20C591E5C104700C9DEF6 /* Setting(设置) */,
 				F1554A581DAD04520011A541 /* Main(主要) */,
 				F14592051DAA4BD9004F48C4 /* Essence(精华) */,
@@ -414,12 +435,60 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F16617FA1E5D36A800724A55 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				F16617FB1E5D36A800724A55 /* Controller */,
+				F16617FC1E5D36A800724A55 /* Model */,
+				F16617FD1E5D36A800724A55 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		F16617FB1E5D36A800724A55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F16617FE1E5D385A00724A55 /* TLAdViewController.h */,
+				F16617FF1E5D385A00724A55 /* TLAdViewController.m */,
+				F16618011E5D6EE600724A55 /* TLAdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F16617FC1E5D36A800724A55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F16617FD1E5D36A800724A55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F16618031E5D7C8400724A55 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				F16618041E5D7C8400724A55 /* LaunchImage-568h@2x.png */,
+				F16618051E5D7C8400724A55 /* LaunchImage-700-568h@2x.png */,
+				F16618061E5D7C8400724A55 /* LaunchImage-700@2x.png */,
+				F16618071E5D7C8400724A55 /* LaunchImage-800-667h@2x.png */,
+				F16618081E5D7C8400724A55 /* LaunchImage-800-Portrait-736h@3x.png */,
+				F16618091E5D7C8400724A55 /* LaunchImage.png */,
+				F166180A1E5D7C8400724A55 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
 		F1A20C591E5C104700C9DEF6 /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
 				F1A20C5A1E5C104700C9DEF6 /* Controller */,
-				F1A20C5B1E5C104700C9DEF6 /* Model */,
 				F1A20C5C1E5C104700C9DEF6 /* View */,
+				F1A20C5B1E5C104700C9DEF6 /* Model */,
 			);
 			path = "Setting(设置)";
 			sourceTree = "<group>";
@@ -551,10 +620,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F166180C1E5D7C8400724A55 /* LaunchImage-700-568h@2x.png in Resources */,
+				F16618111E5D7C8400724A55 /* LaunchImage@2x.png in Resources */,
 				F1345E211DAA1E8000B16857 /* LaunchScreen.storyboard in Resources */,
+				F16618021E5D6EE600724A55 /* TLAdViewController.xib in Resources */,
 				F1345E1E1DAA1E8000B16857 /* Assets.xcassets in Resources */,
+				F166180E1E5D7C8400724A55 /* LaunchImage-800-667h@2x.png in Resources */,
 				F117EB561DAB386600DB8A04 /* Info.plist in Resources */,
+				F166180D1E5D7C8400724A55 /* LaunchImage-700@2x.png in Resources */,
+				F166180B1E5D7C8400724A55 /* LaunchImage-568h@2x.png in Resources */,
+				F166180F1E5D7C8400724A55 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				F1345E1C1DAA1E7F00B16857 /* Main.storyboard in Resources */,
+				F16618101E5D7C8400724A55 /* LaunchImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +668,7 @@
 				F1A20C5F1E5C109700C9DEF6 /* TLSettingViewController.m in Sources */,
 				F1554A5E1DAD04520011A541 /* LuLuTabBartViewController.m in Sources */,
 				F1554A611DAD0C110011A541 /* UIImage+image.m in Sources */,
+				F16618001E5D385A00724A55 /* TLAdViewController.m in Sources */,
 				F1CB330C1E0D182100448BDE /* TLNavgationController.m in Sources */,
 				F1280E8F1DBE146D00456A55 /* UIView+Frame.m in Sources */,
 			);

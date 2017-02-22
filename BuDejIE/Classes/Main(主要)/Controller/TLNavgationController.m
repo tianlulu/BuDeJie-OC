@@ -16,19 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // 控制手势什么时候触发,只有非根控制器才需要触发手势
     // self.interactivePopGestureRecognizer.delegate = self;
-    
     // 假死状态:程序还在运行,但是界面死了.
-    
-    
-     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
-    
-     [self.view addGestureRecognizer:pan];
-    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:pan];
     pan.delegate = self;
-    
     // 禁止之前手势
     self.interactivePopGestureRecognizer.enabled = NO;
 }
@@ -72,10 +65,7 @@
  
  
  <UIScreenEdgePanGestureRecognizer: 0x7fdc4a740120; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7fdc4a73e690>; target= <(action=handleNavigationTransition:, >>
- 
  */
-
-
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     return self.childViewControllers.count > 1;
 }
