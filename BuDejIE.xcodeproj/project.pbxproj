@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0990D8AA305D743C842D7F /* libPods-BuDejIE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB83340D0DD0C7E30189AC8 /* libPods-BuDejIE.a */; };
 		F117EB561DAB386600DB8A04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F117EB551DAB386600DB8A04 /* Info.plist */; };
 		F1280E8F1DBE146D00456A55 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F1280E8E1DBE146D00456A55 /* UIView+Frame.m */; };
 		F1345E1C1DAA1E7F00B16857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1345E1A1DAA1E7F00B16857 /* Main.storyboard */; };
@@ -56,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F8ACECCB8068B560D03D200 /* Pods-BuDejIE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDejIE.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDejIE/Pods-BuDejIE.release.xcconfig"; sourceTree = "<group>"; };
+		3CB83340D0DD0C7E30189AC8 /* libPods-BuDejIE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDejIE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83DEDC2F79A1F8D35C0843CA /* Pods-BuDejIE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDejIE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDejIE/Pods-BuDejIE.debug.xcconfig"; sourceTree = "<group>"; };
 		F117EB551DAB386600DB8A04 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F11E1E231DC8B7AA00825DD9 /* BuDejiE.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDejiE.pch; sourceTree = "<group>"; };
 		F1280E8D1DBE146D00456A55 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0990D8AA305D743C842D7F /* libPods-BuDejIE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +137,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B138F40A1E55ABDFAB803FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB83340D0DD0C7E30189AC8 /* libPods-BuDejIE.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BA75E13948EC8DB48B14641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83DEDC2F79A1F8D35C0843CA /* Pods-BuDejIE.debug.xcconfig */,
+				2F8ACECCB8068B560D03D200 /* Pods-BuDejIE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F1345E051DAA1E7C00B16857 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +161,8 @@
 				F1345E2A1DAA1E8200B16857 /* BuDejIETests */,
 				F1345E351DAA1E8300B16857 /* BuDejIEUITests */,
 				F1345E0F1DAA1E7D00B16857 /* Products */,
+				0BA75E13948EC8DB48B14641 /* Pods */,
+				0B138F40A1E55ABDFAB803FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -523,9 +547,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1345E3B1DAA1E8300B16857 /* Build configuration list for PBXNativeTarget "BuDejIE" */;
 			buildPhases = (
+				D9ADCC98F082AD4129DAF540 /* [CP] Check Pods Manifest.lock */,
 				F1345E0A1DAA1E7C00B16857 /* Sources */,
 				F1345E0B1DAA1E7C00B16857 /* Frameworks */,
 				F1345E0C1DAA1E7C00B16857 /* Resources */,
+				732A7543CD11CA6908982CC7 /* [CP] Embed Pods Frameworks */,
+				5756768F8C87D6CC036087CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -650,6 +677,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5756768F8C87D6CC036087CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuDejIE/Pods-BuDejIE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		732A7543CD11CA6908982CC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuDejIE/Pods-BuDejIE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9ADCC98F082AD4129DAF540 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1345E0A1DAA1E7C00B16857 /* Sources */ = {
@@ -809,6 +884,7 @@
 		};
 		F1345E3C1DAA1E8300B16857 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83DEDC2F79A1F8D35C0843CA /* Pods-BuDejIE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -824,6 +900,7 @@
 		};
 		F1345E3D1DAA1E8300B16857 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8ACECCB8068B560D03D200 /* Pods-BuDejIE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
